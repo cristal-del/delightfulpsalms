@@ -5,14 +5,21 @@ HTML/CSS/JS — no frameworks, no build step, works anywhere. Customers browse
 the menu (Tres Leches cakes, banana bread, cookies) and submit an order
 request; you follow up to confirm details and collect payment.
 
-The design (sage green + dusty rose, script wordmark, wheat-sprig motif) is
-built to match the brand's actual logo. The logo itself is currently
-recreated with web fonts (`Alex Brush` for the script + `Jost` small caps)
-and a hand-coded SVG wheat sprig — it was not embedded as an image because
-no image file was available to use directly. **If you have the real logo
+The design follows the official brand board exactly: the palette
+(`--sage #98A090`, `--rose #D8A0A0`, `--sage-deep #5B6350`,
+`--rose-deep #A66B6B`, `--ivory #FAF6EF`, `--ink #3D3B33` in `styles.css`)
+and the three-role type system — `Alex Brush` script for short (1-3 word)
+titles only, `Jost` tracked uppercase for nav/labels/menu subheads, `Lora`
+for everything meant to be read. The wheat mark follows the board's rule
+too: Rose on light backgrounds, reversed to Cream on dark ones (the CTA
+band, the footer).
+
+The logo wordmark itself is currently recreated with `Alex Brush` + a
+hand-coded SVG wheat sprig, rather than the real logo graphic — no usable
+image file was available when this was built. **If you get the real logo
 file** (PNG or SVG, ideally transparent background), it can replace the
 CSS-built wordmark in the `.logo` element (header, every page) and the
-`.wheat` SVGs for a pixel-exact match — just provide the file.
+`.wheat` SVGs for a pixel-exact match.
 
 ## What's here
 
