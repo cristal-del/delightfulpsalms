@@ -1,17 +1,27 @@
-# Delightful Psalms — Bakery Website
+# Delightful Psalms Cottage — Bakery Website
 
-A simple, fast, no-build website for Delightful Psalms. Plain HTML/CSS/JS —
-no frameworks, no build step, works anywhere. Customers browse the menu
-(Tres Leches cakes, banana bread, cookies) and submit an order request; you
-follow up to confirm details and collect payment.
+A simple, fast, no-build website for Delightful Psalms Cottage. Plain
+HTML/CSS/JS — no frameworks, no build step, works anywhere. Customers browse
+the menu (Tres Leches cakes, banana bread, cookies) and submit an order
+request; you follow up to confirm details and collect payment.
+
+The design (sage green + dusty rose, script wordmark, wheat-sprig motif) is
+built to match the brand's actual logo. The logo itself is currently
+recreated with web fonts (`Alex Brush` for the script + `Jost` small caps)
+and a hand-coded SVG wheat sprig — it was not embedded as an image because
+no image file was available to use directly. **If you have the real logo
+file** (PNG or SVG, ideally transparent background), it can replace the
+CSS-built wordmark in the `.logo` element (header, every page) and the
+`.wheat` SVGs for a pixel-exact match — just provide the file.
 
 ## What's here
 
-- `index.html` — homepage: hero, menu preview, how ordering works, about, testimonials
-- `menu.html` — full menu with flavors, sizes, and prices for all three product lines
+- `index.html` — homepage: hero, menu preview, how ordering works, about
+- `menu.html` — full menu (printed-menu style) with flavors, sizes, and
+  prices for all three product lines
 - `order.html` — the order request form
 - `thank-you.html` — the page customers land on after submitting an order
-- `styles.css` — the design (cream / blush pink / gold, bakery-warm)
+- `styles.css` — the design (ivory / sage green / dusty rose, cottage-elegant)
 - `script.js` — mobile menu toggle + pre-checks an item on the order form when
   arriving from a menu page's "Order This" link
 - `robots.txt` / `sitemap.xml` — basic SEO plumbing
@@ -24,7 +34,6 @@ information is marked that way:
 - **Prices and sizes** for every cake flavor, banana bread loaf, and cookie
   dozen (`menu.html`)
 - **Your story** in the About section (`index.html`)
-- **Real customer testimonials** once you have them (`index.html`)
 - **Contact info** — phone, email, service area/pickup location (footer on
   every page)
 - **Social links** — Instagram/Facebook URLs (footer on every page)
@@ -32,6 +41,9 @@ information is marked that way:
   structured data on each page, plus `robots.txt` and `sitemap.xml`
 - **Response time** — how fast you'll confirm an order (`order.html`,
   `thank-you.html`)
+
+There's intentionally no testimonials section — add one once there are real
+customer reviews to feature, rather than shipping placeholder quotes.
 
 ## How ordering works right now
 
@@ -103,7 +115,8 @@ It redirects to `thank-you.html` after a successful submission.
 ## Editing the menu
 
 Each product line lives in its own `<div class="menu-section">` in
-`menu.html` (`#tres-leches`, `#banana-bread`, `#cookies`). To add or remove
-a flavor, copy/edit a `.menu-item` block. To add a whole new product line,
-copy a `.menu-section` block and give it a new `id`; then add a matching
-card to the menu preview on `index.html` if you want it featured there too.
+`menu.html` (`#tres-leches`, `#banana-bread`, `#cookies`). Each flavor is a
+`.menu-line` (name + price) followed by a `.menu-line-desc` paragraph — copy
+that pair to add a flavor. To add a whole new product line, copy a
+`.menu-section` block and give it a new `id`; then add a matching teaser to
+the menu preview on `index.html` if you want it featured there too.

@@ -3,27 +3,39 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Order Now — Delightful Psalms</title>
-<meta name="description" content="Send an order request to Delightful Psalms for Tres Leches cake, banana bread, or cookies — pickup or delivery.">
+<title>Order Now — Delightful Psalms Cottage</title>
+<meta name="description" content="Send an order request to Delightful Psalms Cottage for Tres Leches cake, banana bread, or cookies — pickup or delivery.">
 <link rel="canonical" href="https://PLACEHOLDER-your-domain.com/order.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header class="site-header">
   <nav class="nav container">
-    <a href="index.html" class="logo"><span class="logo-mark">🍰</span> Delightful Psalms</a>
+    <a href="index.html" class="logo">
+      <svg class="wheat sage" viewBox="0 0 60 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <line x1="30" y1="18" x2="30" y2="92" stroke="currentColor" stroke-width="3"/>
+        <path d="M30 18 L14 4 M30 18 L46 4" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M30 34 L12 23 M30 34 L48 23" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M30 50 L12 41 M30 50 L48 41" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+        <path d="M30 66 L14 59 M30 66 L46 59" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">
+        <span class="word">Delightful</span>
+        <span class="sub">Psalms Cottage</span>
+      </span>
+    </a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="menu.html">Menu</a></li>
       <li><a href="index.html#about">About</a></li>
-      <li><a href="index.html#how-it-works">How Ordering Works</a></li>
+      <li><a href="index.html#how-it-works">Ordering</a></li>
     </ul>
     <div class="nav-cta">
-      <a href="order.html" class="btn btn-primary">Order Now</a>
+      <a href="order.html" class="btn btn-fill">Order</a>
       <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
     </div>
   </nav>
@@ -66,13 +78,13 @@
               <legend>What are you ordering? <span class="required">*</span></legend>
               <div class="checkbox-grid">
                 <label class="checkbox-item">
-                  <input type="checkbox" name="items[]" value="Tres Leches Cakes"> 🍰 Tres Leches Cake
+                  <input type="checkbox" name="items[]" value="Tres Leches Cakes"> Tres Leches Cake
                 </label>
                 <label class="checkbox-item">
-                  <input type="checkbox" name="items[]" value="Banana Bread"> 🍌 Banana Bread
+                  <input type="checkbox" name="items[]" value="Banana Bread"> Banana Bread
                 </label>
                 <label class="checkbox-item">
-                  <input type="checkbox" name="items[]" value="Cookies"> 🍪 Cookies
+                  <input type="checkbox" name="items[]" value="Cookies"> Cookies
                 </label>
               </div>
             </fieldset>
@@ -108,7 +120,7 @@
             <textarea id="notes" name="notes" placeholder="Nut allergies, a birthday message, gift wrapping, etc."></textarea>
           </div>
 
-          <button type="submit" class="btn btn-primary" style="width:100%;">Send Order Request</button>
+          <button type="submit" class="btn btn-fill btn-block">Send Order Request</button>
           <p class="form-footer-note">We typically respond within 24–48 hours to confirm your order. PLACEHOLDER: adjust this to your real response time.</p>
         </form>
       </div>
@@ -119,12 +131,11 @@
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
-      <h4>Delightful Psalms</h4>
+      <span class="word">Delightful</span>
       <p>Made-to-order Tres Leches cakes, banana bread, and cookies. PLACEHOLDER: add your city/service area here.</p>
       <div class="social-row">
-        <a href="https://instagram.com/PLACEHOLDER" aria-label="Instagram">📸</a>
-        <a href="https://facebook.com/PLACEHOLDER" aria-label="Facebook">📘</a>
-        <a href="tel:PLACEHOLDER-phone" aria-label="Call us">📞</a>
+        <a href="https://instagram.com/PLACEHOLDER">Instagram</a>
+        <a href="https://facebook.com/PLACEHOLDER">Facebook</a>
       </div>
     </div>
     <div>
@@ -145,7 +156,7 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    &copy; <span id="year"></span> Delightful Psalms. All rights reserved.
+    &copy; <span id="year"></span> Delightful Psalms Cottage. All rights reserved.
   </div>
 </footer>
 
