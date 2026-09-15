@@ -268,6 +268,36 @@ img, svg {
   color: var(--rose);
 }
 
+/* ---------- Verse strip ---------- */
+
+.verse-strip {
+  text-align: center;
+  padding: 0 24px 56px;
+}
+
+.verse-strip .wheat-divider {
+  margin-bottom: 22px;
+}
+
+.verse {
+  font-family: 'Cormorant Garamond', serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ink);
+  max-width: 46ch;
+  margin: 0 auto 10px;
+}
+
+.verse-strip cite {
+  display: block;
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-size: 0.74rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage-deep);
+}
+
 /* ---------- Section shells ---------- */
 
 section {
