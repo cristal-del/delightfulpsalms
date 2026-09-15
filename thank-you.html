@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Received — Delightful Psalms</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="logo-mark">🍰</span> Delightful Psalms</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="order.html" class="btn btn-primary">Order Again</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="thankyou">
+    <div class="container">
+      <div class="big-emoji">🍰🙏</div>
+      <h1>Thank you for your order request!</h1>
+      <p>We've received your details and will reach out within 24–48 hours to confirm availability, pricing, and pickup or delivery. PLACEHOLDER: adjust this response-time text as needed.</p>
+      <a href="index.html" class="btn btn-outline">Back to Home</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-bottom">
+    &copy; <span id="year"></span> Delightful Psalms. All rights reserved.
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

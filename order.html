@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Now — Delightful Psalms</title>
+<meta name="description" content="Send an order request to Delightful Psalms for Tres Leches cake, banana bread, or cookies — pickup or delivery.">
+<link rel="canonical" href="https://PLACEHOLDER-your-domain.com/order.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="logo"><span class="logo-mark">🍰</span> Delightful Psalms</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#how-it-works">How Ordering Works</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="order.html" class="btn btn-primary">Order Now</a>
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <div class="container order-wrap">
+      <div class="section-heading">
+        <span class="eyebrow">Order Request</span>
+        <h1>Tell us what you'd like</h1>
+        <p>This is a request, not a final checkout — we'll follow up to confirm availability, exact pricing, and pickup/delivery details before anything's charged.</p>
+      </div>
+
+      <div class="form-card">
+        <form name="order-request" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="thank-you.html">
+          <input type="hidden" name="form-name" value="order-request">
+          <p class="hp-field">
+            <label>Don't fill this out if you're human: <input name="bot-field"></label>
+          </p>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Full Name <span class="required">*</span></label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <fieldset>
+              <legend>What are you ordering? <span class="required">*</span></legend>
+              <div class="checkbox-grid">
+                <label class="checkbox-item">
+                  <input type="checkbox" name="items[]" value="Tres Leches Cakes"> 🍰 Tres Leches Cake
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="items[]" value="Banana Bread"> 🍌 Banana Bread
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" name="items[]" value="Cookies"> 🍪 Cookies
+                </label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="form-group">
+            <label for="order-details">Flavors, Sizes &amp; Quantities <span class="required">*</span></label>
+            <textarea id="order-details" name="order-details" required placeholder="Example: 1 full sheet Classic Tres Leches, 2 dozen Snickerdoodle cookies, 1 Chocolate Chip banana bread loaf"></textarea>
+            <p class="hint">Be as specific as you can — flavor, size, and quantity for each item.</p>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>Pickup or Delivery? <span class="required">*</span></label>
+              <div class="radio-row">
+                <label><input type="radio" name="fulfillment" value="Pickup" required> Pickup</label>
+                <label><input type="radio" name="fulfillment" value="Delivery" required> Delivery</label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="needed-by">Date Needed By <span class="required">*</span></label>
+              <input type="date" id="needed-by" name="needed-by" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Delivery Address (if applicable)</label>
+            <input type="text" id="address" name="address" placeholder="Leave blank for pickup">
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Allergies, Special Requests, or Occasion</label>
+            <textarea id="notes" name="notes" placeholder="Nut allergies, a birthday message, gift wrapping, etc."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;">Send Order Request</button>
+          <p class="form-footer-note">We typically respond within 24–48 hours to confirm your order. PLACEHOLDER: adjust this to your real response time.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <h4>Delightful Psalms</h4>
+      <p>Made-to-order Tres Leches cakes, banana bread, and cookies. PLACEHOLDER: add your city/service area here.</p>
+      <div class="social-row">
+        <a href="https://instagram.com/PLACEHOLDER" aria-label="Instagram">📸</a>
+        <a href="https://facebook.com/PLACEHOLDER" aria-label="Facebook">📘</a>
+        <a href="tel:PLACEHOLDER-phone" aria-label="Call us">📞</a>
+      </div>
+    </div>
+    <div>
+      <h4>Explore</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="order.html">Order Now</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <ul>
+        <li>PLACEHOLDER-phone</li>
+        <li>PLACEHOLDER-email</li>
+        <li>PLACEHOLDER: pickup location / service area</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    &copy; <span id="year"></span> Delightful Psalms. All rights reserved.
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

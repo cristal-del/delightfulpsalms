@@ -1,0 +1,744 @@
+/* ============================================
+   Delightful Psalms — Bakery Site Styles
+   ============================================ */
+
+:root {
+  --cream: #fff8ef;
+  --cream-deep: #fbeee0;
+  --blush: #f3d9d6;
+  --rose: #c97b84;
+  --rose-deep: #a85a63;
+  --gold: #c9a24b;
+  --gold-light: #e6cd8a;
+  --cocoa: #4a2e2a;
+  --cocoa-soft: #6b4a3f;
+  --white: #ffffff;
+  --shadow: 0 10px 30px rgba(74, 46, 42, 0.12);
+  --radius: 18px;
+  --max-width: 1140px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;
+  color: var(--cocoa);
+  background: var(--cream);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.2;
+  margin: 0 0 0.5em;
+  color: var(--cocoa);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: var(--rose-deep);
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--rose-deep);
+  margin-bottom: 0.6em;
+}
+
+/* ---------- Buttons ---------- */
+
+.btn {
+  display: inline-block;
+  padding: 14px 30px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.2s ease, color 0.2s ease;
+  text-align: center;
+}
+
+.btn-primary {
+  background: var(--rose-deep);
+  color: var(--white);
+  box-shadow: var(--shadow);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  background: var(--rose);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--cocoa);
+  border-color: var(--cocoa);
+}
+
+.btn-outline:hover {
+  background: var(--cocoa);
+  color: var(--white);
+}
+
+.btn-gold {
+  background: var(--gold);
+  color: var(--cocoa);
+  box-shadow: var(--shadow);
+}
+
+.btn-gold:hover {
+  transform: translateY(-2px);
+  background: var(--gold-light);
+}
+
+/* ---------- Header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 248, 239, 0.92);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgba(74, 46, 42, 0.08);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--cocoa);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo .logo-mark {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: var(--cocoa);
+  font-weight: 600;
+}
+
+.nav-links a:hover {
+  color: var(--rose-deep);
+}
+
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: var(--cocoa);
+  cursor: pointer;
+  padding: 4px 8px;
+}
+
+/* ---------- Hero ---------- */
+
+.hero {
+  padding: 72px 0 56px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.hero .lede {
+  font-size: 1.15rem;
+  color: var(--cocoa-soft);
+  max-width: 46ch;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
+.hero-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px;
+  text-align: center;
+  border: 1px solid var(--blush);
+}
+
+.hero-card .hero-emoji {
+  font-size: 3rem;
+  margin-bottom: 12px;
+}
+
+.hero-badges {
+  display: flex;
+  gap: 14px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.badge {
+  background: var(--cream-deep);
+  border: 1px solid var(--blush);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--rose-deep);
+}
+
+/* ---------- Section shells ---------- */
+
+section {
+  padding: 64px 0;
+}
+
+.section-heading {
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 44px;
+}
+
+.section-alt {
+  background: var(--cream-deep);
+}
+
+/* ---------- Menu preview / cards ---------- */
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.menu-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 32px 26px;
+  text-align: center;
+  border: 1px solid var(--blush);
+  transition: transform 0.2s ease;
+}
+
+.menu-card:hover {
+  transform: translateY(-4px);
+}
+
+.menu-card .card-emoji {
+  font-size: 2.6rem;
+  margin-bottom: 14px;
+}
+
+.menu-card h3 {
+  font-size: 1.3rem;
+}
+
+.menu-card p {
+  color: var(--cocoa-soft);
+  font-size: 0.96rem;
+}
+
+.menu-card .card-link {
+  font-weight: 700;
+  color: var(--rose-deep);
+}
+
+/* ---------- Full menu page ---------- */
+
+.menu-section {
+  margin-bottom: 56px;
+}
+
+.menu-section-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  border-bottom: 2px solid var(--blush);
+  padding-bottom: 14px;
+  margin-bottom: 28px;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.menu-item {
+  background: var(--white);
+  border: 1px solid var(--blush);
+  border-radius: var(--radius);
+  padding: 22px 24px;
+  box-shadow: var(--shadow);
+}
+
+.menu-item-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.menu-item h4 {
+  margin-bottom: 4px;
+  font-size: 1.1rem;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--rose-deep);
+  white-space: nowrap;
+}
+
+.menu-item p {
+  color: var(--cocoa-soft);
+  font-size: 0.94rem;
+  margin-bottom: 0;
+}
+
+.menu-note {
+  background: var(--cream-deep);
+  border-left: 4px solid var(--gold);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-top: 8px;
+  font-size: 0.95rem;
+  color: var(--cocoa-soft);
+}
+
+/* ---------- Steps / how it works ---------- */
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.step {
+  text-align: center;
+  padding: 20px;
+}
+
+.step-number {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--rose-deep);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0 auto 16px;
+}
+
+/* ---------- About ---------- */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 48px;
+  align-items: center;
+}
+
+.about-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  border: 1px solid var(--blush);
+  text-align: center;
+}
+
+.about-card .about-emoji {
+  font-size: 3.4rem;
+}
+
+/* ---------- Testimonials ---------- */
+
+.testimonials {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.testimonial {
+  background: var(--white);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--blush);
+  font-style: italic;
+}
+
+.testimonial .stars {
+  color: var(--gold);
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.testimonial cite {
+  display: block;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--rose-deep);
+}
+
+/* ---------- CTA banner ---------- */
+
+.cta-banner {
+  background: linear-gradient(135deg, var(--rose-deep), var(--rose));
+  color: var(--white);
+  text-align: center;
+  border-radius: var(--radius);
+  padding: 56px 32px;
+  margin: 0 24px;
+}
+
+.cta-banner h2 {
+  color: var(--white);
+}
+
+.cta-banner p {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 52ch;
+  margin: 0 auto 24px;
+}
+
+.cta-banner .btn-gold {
+  color: var(--cocoa);
+}
+
+/* ---------- Order form ---------- */
+
+.order-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.form-card {
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 40px;
+  border: 1px solid var(--blush);
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+}
+
+.required {
+  color: var(--rose-deep);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1.5px solid var(--blush);
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: var(--cream);
+  color: var(--cocoa);
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--rose-deep);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+fieldset {
+  border: 1.5px solid var(--blush);
+  border-radius: 10px;
+  padding: 16px 18px;
+  margin: 0;
+}
+
+legend {
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.checkbox-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.checkbox-item input {
+  width: 18px;
+  height: 18px;
+}
+
+.radio-row {
+  display: flex;
+  gap: 24px;
+}
+
+.radio-row label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.radio-row input {
+  width: 18px;
+  height: 18px;
+}
+
+.hint {
+  font-size: 0.85rem;
+  color: var(--cocoa-soft);
+  margin-top: 6px;
+}
+
+.form-footer-note {
+  text-align: center;
+  margin-top: 18px;
+  font-size: 0.9rem;
+  color: var(--cocoa-soft);
+}
+
+/* honeypot field */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+}
+
+/* ---------- Thank-you page ---------- */
+
+.thankyou {
+  text-align: center;
+  padding: 100px 0;
+}
+
+.thankyou .big-emoji {
+  font-size: 4rem;
+  margin-bottom: 20px;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  background: var(--cocoa);
+  color: var(--cream);
+  padding: 48px 0 28px;
+  margin-top: 40px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 32px;
+}
+
+.footer-grid h4 {
+  color: var(--gold-light);
+  font-size: 1rem;
+}
+
+.footer-grid a,
+.footer-grid p {
+  color: rgba(255, 248, 239, 0.85);
+}
+
+.footer-grid ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-grid li {
+  margin-bottom: 10px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 248, 239, 0.15);
+  padding-top: 20px;
+  text-align: center;
+  font-size: 0.85rem;
+  color: rgba(255, 248, 239, 0.6);
+}
+
+.social-row {
+  display: flex;
+  gap: 14px;
+  margin-top: 10px;
+}
+
+.social-row a {
+  color: var(--cream);
+  font-size: 1.3rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 860px) {
+  .hero .container,
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card {
+    order: -1;
+  }
+
+  .menu-grid,
+  .steps,
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .checkbox-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--cream);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 24px;
+    gap: 18px;
+    border-bottom: 1px solid rgba(74, 46, 42, 0.08);
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-cta .btn {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .cta-banner {
+    margin: 0 16px;
+    padding: 40px 20px;
+  }
+}
