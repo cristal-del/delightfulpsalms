@@ -166,29 +166,11 @@ img, svg {
 .logo {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1;
-}
-
-.logo-text .word {
-  font-family: 'Alex Brush', cursive;
-  font-size: 1.9rem;
-  color: var(--sage);
-  line-height: 1;
-}
-
-.logo-text .sub {
-  font-family: 'Jost', sans-serif;
-  font-size: 0.6rem;
-  letter-spacing: 0.28em;
-  text-transform: uppercase;
-  color: var(--sage);
-  margin-top: 2px;
+.logo-img {
+  height: 58px;
+  width: auto;
 }
 
 .nav-links {
@@ -683,10 +665,15 @@ legend {
   margin-bottom: 36px;
 }
 
-.footer-grid .word {
-  font-family: 'Alex Brush', cursive;
-  font-size: 1.6rem;
-  color: var(--sage);
+.footer-brand {
+  font-family: 'Jost', sans-serif;
+  font-style: normal;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ivory);
+  margin-bottom: 12px;
 }
 
 .footer-grid h4 {

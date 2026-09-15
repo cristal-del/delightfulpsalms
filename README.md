@@ -14,12 +14,14 @@ for everything meant to be read. The wheat mark follows the board's rule
 too: Rose on light backgrounds, reversed to Cream on dark ones (the CTA
 band, the footer).
 
-The logo wordmark itself is currently recreated with `Alex Brush` + a
-hand-coded SVG wheat sprig, rather than the real logo graphic — no usable
-image file was available when this was built. **If you get the real logo
-file** (PNG or SVG, ideally transparent background), it can replace the
-CSS-built wordmark in the `.logo` element (header, every page) and the
-`.wheat` SVGs for a pixel-exact match.
+The real logo is used throughout — `assets/logo.svg` (the full wordmark,
+extracted as vector art from the brand's own logo file, so it's crisp at
+any size) in the header on every page, and a cropped version of just the
+wheat/cross mark as `favicon.svg` / `favicon.png` / `apple-touch-icon.png`.
+The footer uses plain text instead of the logo image, since the logo's
+colors (sage + rose) aren't legible on the footer's dark background and
+the brand board only defines a reversed (cream) treatment for the wheat
+mark alone, not the full lockup.
 
 ## What's here
 
